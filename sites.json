@@ -1,0 +1,30 @@
+[
+  {
+    "folder": "hassan-bazzaz",
+    "name": "Hassan Wishyar Bazzaz",
+    "role": "Project Lead, Office of the Prime Minister (KRG)",
+    "domain": null,
+    "branch": "deploy/hassan-bazzaz"
+  },
+  {
+    "folder": "shilan-dosky",
+    "name": "Shilan Dosky",
+    "role": "Head of Special Projects & Communications, Office of the Prime Minister (KRG)",
+    "domain": null,
+    "branch": "deploy/shilan-dosky"
+  },
+  {
+    "folder": "saad-al-gburi",
+    "name": "Saad Al-Gburi",
+    "role": "Architectural Designer & BIM Specialist",
+    "domain": "saad-raad.com",
+    "branch": "deploy/saad-al-gburi"
+  },
+  {
+    "folder": "phoebe-davenport",
+    "name": "Phoebe M. Davenport",
+    "role": "Senior Global Enterprise Account Executive",
+    "domain": "phebe.site",
+    "branch": "deploy/phoebe-davenport"
+  }
+]

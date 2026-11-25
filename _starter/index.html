@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+  Portfolio website for CLIENT NAME
+  Designed and built by Essential Studios
+  For website enquiries, contact: fathima@essential-studios.com
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLIENT NAME — JOB TITLE</title>
+<meta name="description" content="One-sentence summary of the client.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="alternate icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#111111">
+<meta name="author" content="CLIENT NAME">
+<meta name="designer" content="Essential Studios — fathima@essential-studios.com">
+<meta property="og:title" content="CLIENT NAME — JOB TITLE">
+<meta property="og:description" content="One-sentence summary of the client.">
+<meta property="og:type" content="website">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,sans-serif;line-height:1.6;color:#111;background:#fafafa}
+  .wrap{width:min(calc(100% - 48px),1100px);margin:0 auto}
+  section{padding:100px 0}
+  footer{border-top:1px solid #ddd;padding:24px 0;font-size:13px;color:#777}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<main>
+  <header class="wrap" style="padding:140px 0 80px">
+    <h1>CLIENT NAME</h1>
+    <p>JOB TITLE · COMPANY</p>
+  </header>
+  <section id="about"><div class="wrap"><h2>About</h2></div></section>
+  <section id="experience"><div class="wrap"><h2>Experience</h2></div></section>
+  <section id="education"><div class="wrap"><h2>Education</h2></div></section>
+  <section id="contact"><div class="wrap"><h2>Contact</h2></div></section>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> CLIENT NAME</span>
+    <span>Website by Essential Studios</span>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>

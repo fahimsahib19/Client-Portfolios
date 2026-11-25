@@ -1,0 +1,43 @@
+name: Publish sites
+
+# Every folder inside /sites is published to its own branch: deploy/<folder-name>.
+# Hostinger auto-deploys each branch to the matching domain.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "sites/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-sites
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Update deploy branches
+        run: |
+          set -e
+          for dir in sites/*/; do
+            slug=$(basename "$dir")
+            echo "Publishing $slug -> deploy/$slug"
+            git subtree split --prefix="sites/$slug" -b "tmp-$slug"
+            git push --force origin "tmp-$slug:refs/heads/deploy/$slug"
+            git branch -D "tmp-$slug"
+          done
