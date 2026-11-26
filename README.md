@@ -8,6 +8,7 @@ Each portfolio is a fast, self-contained static site: a single `index.html` with
 
 | Preview | Client | Role | Live site |
 |---|---|---|---|
+| <img src="previews/ciaran-savage.jpg" width="260"> | **Ciaran Savage** | Entrepreneur & Investor | — |
 | <img src="previews/phoebe-davenport.jpg" width="260"> | **Phoebe M. Davenport** | Senior Global Enterprise Account Executive | [phebe.site](https://phebe.site) |
 | <img src="previews/saad-al-gburi.jpg" width="260"> | **Saad Al-Gburi** | Architectural Designer & BIM Specialist | [saad-raad.com](https://saad-raad.com) |
 | <img src="previews/shilan-dosky.jpg" width="260"> | **Shilan Dosky** | Head of Special Projects & Communications | — |
